@@ -1,9 +1,9 @@
 [package]
 name = "less-ai"
 description = "AI paneli: terminal tabları (Claude, Codex, Gemini, Ollama), oturum izleme, .less/ai posta kutusu, LESS MCP sunucusu."
-version.workspace = true
-edition.workspace = true
-license.workspace = true
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
 
 [dependencies]
 alacritty_terminal = { version = "0.26", default-features = false }
@@ -15,5 +15,5 @@ serde_json = "1"
 [dev-dependencies]
 tempfile = "3"
 
-[lints]
-workspace = true
+[lints.rust]
+unsafe_code = "forbid"
